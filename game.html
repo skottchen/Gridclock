@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gamestyle.css">
+    <title>Gameboard</title>
+</head>
+
+<body>
+    <h1 align="center" id="timeleft"></h1>
+    <div class="base"></div>
+    <div class="grid">
+        <div class="grass"></div>
+        <div class="grid grass _1"></div>
+        <div class="grid grass _2"></div>
+        <div class="grid grass _3"></div>
+        <div class="grid grass _4"></div>
+        <div class="grid grass _5"></div>
+        <div class="grid grass _6"></div>
+        <div class="grid grass _7"></div>
+        <div class="grid grass _8"></div>
+        <div class="grid grass _9"></div>
+    </div>
+
+    <!-- border rectangles -->
+    <section class="border">
+
+        <div class="border layer1 rec00">
+        </div>
+        <div class="border layer1 rec01">
+        </div>
+        <div class="border layer1 rec02">
+        </div>
+
+        <div class="border layer2 rec03">
+        </div>
+        <div class="border layer2 rec04">
+        </div>
+        <div class="border layer2 rec05">
+        </div>
+
+        <div class="border layer3 rec06">
+
+        </div>
+        <div class="border layer3 rec07">
+
+        </div>
+        <div class="border layer3 rec08">
+
+        </div>
+
+        <div class="border layer4 rec09">
+
+        </div>
+
+        <div class="border layer4 rec010">
+
+        </div>
+
+        <div class="border layer4 rec011">
+
+        </div>
+    </section>
+
+
+    <section class="sideborder">
+
+        <div class="sideborder sidelayer1 rec10">
+
+        </div>
+        <div class="sideborder sidelayer1 rec11">
+
+        </div>
+        <div class="sideborder sidelayer1 rec12">
+
+        </div>
+        <div class="sideborder sidelayer1 rec13">
+
+        </div>
+
+        <div class="sideborder sidelayer2 rec14">
+
+        </div>
+        <div class="sideborder sidelayer2 rec15">
+
+        </div>
+        <div class="sideborder sidelayer2 rec16">
+
+        </div>
+        <div class="sideborder sidelayer2 rec17">
+
+        </div>
+
+        <div class="sideborder sidelayer3 rec18">
+
+        </div>
+        <div class="sideborder sidelayer3 rec19">
+
+        </div>
+        <div class="sideborder sidelayer3 rec110">
+
+        </div>
+        <div class="sideborder sidelayer3 rec111">
+
+        </div>
+    </section>
+
+    <img id="sprite" src="sprite.png" alt="sprite">
+
+
+    <div id="timer">
+        <p>The goal of the game is to maximize the time you stay alive.</p>
+        <p>Moving the sprite across a brown (mud) path costs you 4 seconds
+            of time remaining.</p>
+        <p>Moving the sprite across a blue (ice) path costs you 5 seconds
+            of time remaining.</p>
+        <p>Moving the sprite across a grey (regular road) path costs you 2 seconds
+            of time remaining.</p>
+        <p id="boldtext">Moving the sprite across a white square adds the number(amount of time)
+            on the square to your time remaining. The positions of the white squares
+            are randomized.</p>
+        <p>Use the arrow keys to move the sprite.</p>
+        <p>Press a to begin.</p>
+
+        <p id="tremain">Time Remaining:</p>
+        <span id="countdown">
+            00:30
+        </span>
+    </div>
+
+    <div id="countuptimer">
+        <br><br><br>
+        <p>Total time alive:</p>
+        <span id="countup">00:00</span>
+    </div>
+
+    <div id="textbox1"><p></p></div>
+    <div id="textbox2"><p></p></div>
+
+    <div id="footer">
+        <p><a href="https://skottchen.github.io/personal-website/">
+            Back to my website </a></p>
+    </div>
+
+    <script src="GridGame.js"></script>
+    <script src="timer.js"></script>
+
+</body>
+
+</html>
